@@ -1,0 +1,454 @@
+@font-face {
+    font-family: BacasimeAntique;
+    src: url(fonts/BacasimeAntique-Regular.ttf), url(fonts/DancingScript-VariableFont_wght.ttf);
+}   
+@font-face {
+    font-family: dancingscripts;
+    src:  url(fonts/DancingScript-VariableFont_wght.ttf);
+} 
+@font-face {
+    font-family: montseerat ;
+    src:  url(fonts/Montserrat-VariableFont_wght.ttf);
+} 
+@font-face {
+    font-family: popins;
+    src:  url(fonts/Poppins-Medium.ttf);
+} 
+#body {
+    display: grid;
+    box-sizing: border-box;
+} 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* header section */
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding-block: 20px;
+    padding-inline: 25px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 2;
+    flex-shrink: 0.5;
+    gap: 5rem;
+    box-sizing: border-box;
+}
+svg {
+    width: 20px;
+}
+.menu-bar {
+    position: fixed;
+    z-index: 10;
+    right: 15px;
+    display: none;
+}
+.name {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+    gap: 8px;
+    flex-grow: 1.7;
+    flex-shrink: 4;
+
+    color: rgba(66, 66, 69, 0.89);
+}
+nav a {
+    padding-block: 3px;
+    border-bottom: 2.4px solid transparent;
+    text-decoration: none;
+    color: rgba(53, 53, 55, 0.834);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: border-bottom; 
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out; 
+}
+nav a:hover {
+    border-bottom-color: rgba(0, 0, 0, 0.607);
+}
+
+.links{
+    display: flex;
+    gap: 3.5rem;
+    list-style: none;
+}
+.social-medias  {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.social-medias > li:hover .s-links > svg{
+    transform: translateY(-2px);
+}
+/* none */
+/* .none {
+    height: 4rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+} */
+
+/* main section */
+main {
+    border: 1px solid rgba(0, 0, 0, 0.092);
+    background-color: rgba(223, 225, 238, 0.492);
+    font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+
+    display: flex;
+    height: max(300px, 75vh);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.round {
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: none;
+}
+
+.image {
+    box-sizing: border-box;
+    display: flex;
+}
+.first-child {
+    font-size: 2.5rem;
+    width: 25ch;
+}
+.des-me {
+    font-size: 1.rem;
+    font-weight: 500;
+    width: 70ch;
+}
+.bold {
+    font-weight: bold;
+}
+.description {
+    height: 100%;
+    /* border: 1px solid salmon; */
+    padding-block: 5px;
+    padding-inline:  3rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+.image {
+    height: 100%;
+    /* border: 1px solid salmon; */
+
+    flex: 1;
+}
+/* section one part */
+#about {
+    padding: 4rem 3rem;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+    width: 100%;   
+    flex-wrap: wrap;
+    font-family: montseerat;
+}
+#about > * {
+    max-width: 110ch;
+}
+#about > h3 {
+    font-size: 2.5rem;
+    font-weight: 100;
+}
+
+/* section2 part */
+#works {
+    background-color: rgba(223, 225, 238, 0.492);
+    padding: 3rem 3rem;
+    box-sizing: border-box;
+    width: 100%;
+
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, max(40%, 600px));
+}
+.folder-wrapper {
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.folder-wrapper > ul {
+    display: flex;
+    gap: 1.2rem;
+}
+.js {
+    width: 40px; 
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.project * {
+    list-style: none;
+}
+.project {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: max(40%, 600px);
+
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px 1px rgb(147, 145, 145);
+}
+.materials {
+    box-sizing: border-box;
+    padding: 0.6rem 0.8rem;
+    width: 20rem;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    background-color: rgba(193, 195, 208, 0.492);
+}
+.w-img {
+    max-width: 100%;
+    height: 500px;
+}
+.img-wrap {
+    flex: 1;
+    width: 20rem;
+    height: 350px;
+}
+/* skill */
+
+#skills {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 3rem 1.5rem;
+    align-items: flex-start;
+    background-color: rgba(106, 200, 237, 0.629);
+}
+#skills > section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#skills  h3 {
+    font-size: 2rem;
+}
+#skills  ul {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    list-style-type:circle;
+}
+
+    
+
+/* footer part */
+#contact {
+    background-color: black;
+    color: white;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace;
+    width: 100%;
+}
+.round1 {
+    width: 80px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    width: 80%;
+    margin: 3rem auto;
+}
+.contact > section {
+    box-sizing: border-box;
+    padding: 1.5rem 3.5rem;
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    flex: 1;
+}
+.contact > .footer-sec1 {
+    gap: 2rem;
+}
+.footer-description {
+    width: 30ch;
+    font-size: 1.3rem;
+    color: rgba(99, 107, 141, 0.903);
+}
+.footer-sec2 > h3{
+    font-size: 2.8rem;
+}
+textarea {
+    border: 1px solid white;
+    border-radius: 0.6rem;
+    background-color: rgb(196, 206, 215);
+    padding: 10px;
+    box-shadow: 0 0 1px 1.5px whitesmoke;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace sans-serif;
+}
+.submit {
+    background-color: rgb(230, 233, 236);
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 3px 0 white;
+    width: 100px;
+    height: 45px;
+}
+form {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block: 0.6rem;
+    color: rgb(61, 171, 158);
+}
+form input {
+    height: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.7rem;
+    width: 12rem;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    background-color: rgb(182, 186, 189);
+}
+.lighter {
+    color: rgba(127, 136, 176, 0.903);
+}
+.name1 {
+    color: white;
+    font-size: 1.2rem;
+    
+}
+hr {
+    color: rgba(82, 78, 78, 0.222);
+    background-color: rgb(155, 157, 159);
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* media */
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+  .menu-bar {
+    display: block;
+    width: 25px;
+  }  
+  nav {
+    top: 1px;
+    padding: 150px 20px;
+    right: 1px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    z-index: 5;
+    border: 1px solid transparent;
+    border-radius: 0 0px 0px 19px;
+    width: 50%;
+    gap: 40px;
+    height: 100%;
+    background-color: rgb(208, 207, 207); 
+  
+    font-size: 1.6rem;
+    font-family: dancingscripts;
+    display: none;
+  }
+  .links {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .show{
+    display: flex;
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+  }
+
+@keyframes menu {
+    from { width: 0;}
+    to{ width: 50%;}
+}
+main {
+    flex-direction: column-reverse;
+    color: black;
+}
+.image {
+    display: none;
+}
+.round {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.des-me {
+    font-family:  popins;
+    font-size: 1rem;
+    letter-spacing: 0.2rem ;
+}
+
+.contact {
+    flex-direction: column-reverse;
+}
+.project {
+    flex-direction: column;
+    width: 95%;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.materials{
+    width: 100%;
+    flex-shrink: 1;
+    padding: 1rem 2rem;
+}
+.img-wrap {
+    flex-shrink: 2;
+    width: 100%;
+}
+.w-img {
+    width: 100%;
+    max-height: 250px;
+}
+}
