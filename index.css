@@ -38,6 +38,10 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
+    
+}
+header * {
+    font-size: 1.1rem;
 }
 nav {
     display: flex;
@@ -46,6 +50,9 @@ nav {
     flex-shrink: 0.5;
     gap: 5rem;
     box-sizing: border-box;
+}
+.h-icon {
+    width: 1.5rem;
 }
 svg {
     width: 20px;
@@ -64,7 +71,7 @@ svg {
     flex-grow: 1.7;
     flex-shrink: 4;
 
-    color: rgba(66, 66, 69, 0.89);
+    color: rgba(89, 89, 91, 0.89);
 }
 nav a {
     padding-block: 3px;
@@ -78,6 +85,7 @@ nav a {
 }
 nav a:hover {
     border-bottom-color: rgba(0, 0, 0, 0.607);
+    animation-name: bottom;
 }
 
 .links{
@@ -93,14 +101,6 @@ nav a:hover {
 .social-medias > li:hover .s-links > svg{
     transform: translateY(-2px);
 }
-/* none */
-/* .none {
-    height: 4rem;
-    background-color: transparent;
-    width: 100%;
-    box-sizing: border-box;
-} */
-
 /* main section */
 main {
     border: 1px solid rgba(0, 0, 0, 0.092);
@@ -108,13 +108,16 @@ main {
     font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
 
     display: flex;
-    height: max(300px, 75vh);
+    /* height: max(300px, 75vh); */
     width: 100%;
+    height: 75vh;
     box-sizing: border-box;
+    /* padding-block: 6rem; */
+    margin-block-start: calc(45px + 1rem);
 }
 
 .round {
-    width: 100px;
+    width: 10rem;
     border: 1px solid transparent;
     border-radius: 50%;
     display: none;
@@ -129,7 +132,7 @@ main {
     width: 25ch;
 }
 .des-me {
-    font-size: 1.rem;
+    font-size: 1rem;
     font-weight: 500;
     width: 70ch;
 }
@@ -372,11 +375,26 @@ hr {
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 821px){
   .menu-bar {
     display: block;
-    width: 25px;
-  }  
+    width: 3rem;
+  } 
+  
+  header * {
+    
+    font-size: 2.15rem;
+    font-family: popins;
+  }
+  header {
+    padding-block: 28px;
+    padding-inline: 30px;
+    /* min-height: calc(1rem + 60px); */
+  }
+  .h-icon{
+    width: 2.5rem;
+  }
+ 
   nav {
     top: 1px;
     padding: 150px 20px;
@@ -393,9 +411,18 @@ hr {
     height: 100%;
     background-color: rgb(208, 207, 207); 
   
-    font-size: 1.6rem;
-    font-family: dancingscripts;
+    font-size: 2rem;
+    font-family: popins, dancingscripts;
     display: none;
+  } 
+  nav > *{
+    animation-name: opacity;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+  }
+  svg {
+   width: 45px;
+   height: 40px;
   }
   .links {
     flex-direction: column;
@@ -404,7 +431,7 @@ hr {
   .show{
     display: flex;
     animation-name: menu;
-    animation-duration: 1s;
+    animation-duration: 0.6s;
     animation-timing-function: ease;
   }
 
@@ -412,10 +439,18 @@ hr {
     from { width: 0;}
     to{ width: 50%;}
 }
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
 main {
     flex-direction: column-reverse;
     color: black;
+    margin-block-start: calc(45px + 2rem);
+    padding-block: 10px;
+    height: max(90vh, 800px);
 }
+
 .image {
     display: none;
 }
@@ -425,8 +460,10 @@ main {
 }
 .des-me {
     font-family:  popins;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     letter-spacing: 0.2rem ;
+    max-width: 50ch;
+    /* font-size: 1.5rem; */
 }
 
 .contact {
@@ -451,4 +488,9 @@ main {
     width: 100%;
     max-height: 250px;
 }
+}
+@media (max-width: 392px) {
+    main{
+        height: 100vh;
+    }
 }
