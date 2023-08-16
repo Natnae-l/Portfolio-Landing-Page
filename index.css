@@ -327,6 +327,13 @@ main {
     flex-direction: column;
     flex: 1;
 }
+.send {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-top: 3px;
+    transform: rotate(10deg);
+}
 .contact > .footer-sec1 {
     gap: 2rem;
 }
