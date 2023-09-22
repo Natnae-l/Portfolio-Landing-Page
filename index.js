@@ -10,8 +10,13 @@ function showMenu(){
     document.querySelector(".close").classList.toggle("show-menu")
     document.querySelector(".menu-bar").classList.toggle("show-menu")
 }
+
 function returnMenu(){
     document.querySelector("nav").classList.toggle("show")
     document.querySelector(".close").classList.toggle("show-menu")
     document.querySelector(".menu-bar").classList.toggle("show-menu")
+}
+
+function sendMessage(){
+    
 }
