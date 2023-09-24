@@ -359,11 +359,11 @@ form > div {
     flex-direction: column;
 }
 textarea {
-    border: 1px solid white;
+    border: 1px solid rgb(179, 178, 178);
     border-radius: 0.6rem;
-    background-color: rgb(221, 224, 226);
+    background-color:  rgb(230, 233, 236);
     padding: 10px;
-    box-shadow: 0 0 4px 1.5px rgb(172, 168, 168);
+    box-shadow: 0 0 8px 1.5px rgb(221, 216, 216);
     box-sizing: border-box;
     font-size: 1rem;
     font-family: popins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace sans-serif;
@@ -372,10 +372,10 @@ textarea {
     background-color: rgb(230, 233, 236);
     padding: 8px 18px;
     border: 1px solid rgb(194, 186, 186);
-    border-radius: 1.1rem;
+    border-radius: 0.65rem;
     font-family: popins, Georgia, 'Times New Roman', Times, serif;
     font-size: 0.97rem;
-    box-shadow: 0 0 4px 2px rgb(221, 216, 216);
+    box-shadow: 0 0 8px 1.5px rgb(221, 216, 216);
     width: 105px;
     height: 45px;
 }
