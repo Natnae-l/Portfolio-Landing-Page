@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <link rel="stylesheet" href="index.css">
@@ -199,29 +199,32 @@
                 </figure>   
                 <section>
                     <p class="lighter">email me at:</p>       
-                    <p class="e-mail">natnaelverse1@gmail.com</p>
+                    <p class="e-mail">natnaelmverse1@gmail.com</p>
                 </section>
             </section>
 
             <section class="footer-sec2">
                 <h3>Let's talk</h3>
                 <p class="footer-description">Lorem, dolorum et nihil mollitia dolore incidunt officia eveniet molestiae, assumenda, a perferendis fugiat! Iusto, ad atque!</p>
-                <form action="">
+
+                <form action="https://formsubmit.co/natnaelmverse1@gmail.com" method="post">
                     <div>
                         <label for="name11" class="label">Enter your name: </label>
-                        <input class="inpuut" type="text" id="name11" placeholder="tom cruise">
+                        <input class="inpuut" type="text" id="name11" name="name" placeholder="tom cruise" required>
                     </div>
                     <div>
                         <label for="email" class="label">Enter your email address:</label>
-                        <input class="inpuut"type="email" id="email" placeholder="tomcruise@gmail.com">
+                        <input class="inpuut" type="email" id="email" name="email" placeholder="tomcruise@gmail.com" required>
                     </div>
                     <div>
                         <p class="label">message:</p>
-                        <textarea name="" id="" cols="45" rows="8" required></textarea>
+                        <textarea name="message" id="" cols="45" rows="8" required></textarea>
                     </div>
-                    
-                    <button type="submit" class="submit">Send <img src="Icons/send.png" alt="" class="send"></button>
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                    <button type="submit" class="submit"> Send <img src="Icons/send.png" alt="" class="send"></button>
                 </form>
+
              </section>
         </section>
         <hr>    
