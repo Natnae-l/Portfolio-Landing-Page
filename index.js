@@ -17,6 +17,10 @@ function returnMenu(){
     document.querySelector(".menu-bar").classList.toggle("show-menu")
 }
 
+document.querySelector(`form`).addEventListener(`submit`, sendMessage)
+
 function sendMessage(){
-    
+    return (
+        <h1>Thanks</h1>
+    )
 }
