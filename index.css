@@ -523,6 +523,7 @@ main {
     color: rgb(197, 196, 196);
     font-weight: lighter;
     font-family: popins;
+    padding: 1.5rem;
 }
 #about > h3{
     font-size: 4rem;
