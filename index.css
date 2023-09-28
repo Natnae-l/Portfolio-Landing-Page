@@ -89,18 +89,23 @@ svg {
 }
 nav a {
     padding-block: 3px;
-    border-bottom: 2.4px solid transparent;
     text-decoration: none;
     color: rgba(53, 53, 55, 0.834);
-    transition: border-bottom; 
-    transition-duration: 0.8s;
-    transition-timing-function: ease-in-out; 
+    display: flex;
+    flex-direction: column;
 }
-nav a:hover {
-    border-bottom-color: rgba(0, 0, 0, 0.607);
-    animation-name: bottom;
+nav a:hover .line{
+    transform: scale(1, 1.7) ;
 }
-
+.line {
+    transform: scale(0, 1);
+    transform-origin: center;
+    border: 1px solid transparent;
+    border-radius: 22%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    background-color: rgb(98, 97, 97);
+}
 .links{
     display: flex;
     gap: 3.5rem;
@@ -112,7 +117,51 @@ nav a:hover {
     list-style: none;
 }
 .social-medias > li:hover .s-links > svg{
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+}
+.resume-holder {
+    display: flex;
+    justify-content: flex-end;
+    padding-inline-end: 20%;
+    margin-inline-start: 1rem;
+    /* margin-block-start: 0.3rem; */
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 100%;
+    gap: 1.44rem;
+    place-items: center;
+}
+.button {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 36px;
+    text-decoration: none;
+    color: rgb(231, 237, 241);
+    border: 2px solid rgb(77, 77, 80);
+}
+.p1 {
+    display: flex;
+    place-items: center;
+    padding: 1rem;
+    flex: 6;
+    font-size: 0.9rem;
+    /* font-family: popins,'Times New Roman', Times, serif; */
+    font-weight: bold;
+    background-color: black;
+}
+.p2 {
+    display: flex;
+    place-items: center;
+    flex: 1;
+    padding: 1rem;
+    font-weight: bold;
+    /* background-color: rgba(174, 90, 12, 0.734); */
+    background-color: rgba(223, 225, 238, 0.492);
+    color: black;
+}
+.github-svg {
+    width: 20px;
+    height: 20px;
 }
 /* main section */
 main {
@@ -183,15 +232,15 @@ main {
     justify-content: center;
     gap: 1rem;
     color: white;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     font-weight: 200;
     width: 100%;   
     flex-wrap: wrap;
     font-family: montseerat;
 }
-#about > * {
-    max-width: 110ch;
-}
+/* #about > * {
+    max-width: 115ch;
+} */
 #about > h3 {
     color: rgb(240, 238, 238);
     font-size: 2.7rem;
@@ -200,7 +249,9 @@ main {
 
 /* section2 part */
 #works > h2{
-    font-size: 3.5rem;
+    font-size: 3rem;
+    font-family: popins;
+    color: rgb(37, 36, 36);
 }
 #works {
     background-color: rgba(223, 225, 238, 0.492);
@@ -511,10 +562,43 @@ main {
     flex-direction: column-reverse;
     color: black;
     margin-block-start: calc(45px + 2rem);
-    padding-block: 10px;
+    padding-block: 30px;
     /* min-height: max(90vh, 800px); */
     min-height: calc(90vh + 100px);
 }
+  
+
+
+ .resume-holder {
+    display: flex;
+    justify-content: flex-start;
+    padding-inline-start: 20%;
+    margin-inline-start: 1rem;
+    height: 60px;
+    width: 100%;
+    gap: 1.6rem;
+    place-items: center;
+} 
+.button {
+    display: flex;
+    border: 1px solid red; 
+    height: 60px;
+    text-decoration: none;
+    color: rgb(231, 237, 241);
+    border: 2px solid rgb(77, 77, 80);
+}
+.p1, .p2 {
+    font-size: 1.7rem;
+}
+.github-svg {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
 #works {
     padding: 3rem 1rem;
 }
@@ -611,6 +695,9 @@ main {
     flex-shrink: 1;
     padding: 1rem 2rem;
 }
+.materials *{
+    font-size: 1.8rem;
+}
 .img-wrap {
     flex-shrink: 2;
     width: 100%;
@@ -623,11 +710,25 @@ main {
     width: 28px;
     height: 29px;
 }
+textarea {
+    font-size: 2rem;
+    box-sizing: border-box;
+}
 }
 @media (max-width: 392px) {
     main{
         min-height: 110vh;
         margin-block-start: calc(45px + 3.5rem);
+    }
+    #works {
+        padding: 3rem 1rem;
+    }
+}
+@media (max-width: 300px) {
+    main{
+        min-height: 110vh;
+        margin-block-start: calc(45px + 3.5rem);
+        padding-block: 95px;
     }
     #works {
         padding: 3rem 1rem;
