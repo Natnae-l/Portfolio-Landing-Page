@@ -502,7 +502,7 @@ footer > p {
   header {
     padding-block: 28px;
     padding-inline: 30px;
-    min-height: calc(1.2rem + 90px);
+    min-height: calc(1.2rem + 110px);
   }
   .h-icon {
     width: 2.5rem;
