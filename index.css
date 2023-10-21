@@ -561,7 +561,7 @@ footer > p {
 main {
     flex-direction: column-reverse;
     color: black;
-    margin-block-start: calc(45px + 2rem);
+    margin-block-start: calc(60px + 2rem);
     padding-block: 60px;
     /* min-height: max(90vh, 800px); */
     min-height: calc(90vh + 100px);
