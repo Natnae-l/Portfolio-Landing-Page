@@ -500,7 +500,7 @@ footer > p {
     font-family: popins;
   }
   header {
-    padding-block: 45px;
+    padding-block: 40px;
     padding-inline: 30px;
     min-height: calc(1.2rem + 110px);
   }
