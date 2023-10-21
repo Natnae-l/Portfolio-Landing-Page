@@ -562,7 +562,7 @@ main {
     flex-direction: column-reverse;
     color: black;
     margin-block-start: calc(100px + 2rem);
-    padding-block: 60px;
+    padding-block: 150px;
     /* min-height: max(90vh, 800px); */
     min-height: calc(90vh + 100px);
 }
