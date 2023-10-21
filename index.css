@@ -39,7 +39,7 @@ header {
     gap: 5rem;
     padding-block: 18px;
     padding-inline: 25px;
-    position: sticky;
+    position: fixed;
     width: 100%;
     background-color: white;
     box-shadow: 0px 0 5px 1px rgb(170, 169, 169);
@@ -500,7 +500,7 @@ footer > p {
     font-family: popins;
   }
   header {
-    padding-block: 28px;
+    padding-block: 35px;
     padding-inline: 30px;
     min-height: calc(1.2rem + 110px);
   }
