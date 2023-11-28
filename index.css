@@ -31,14 +31,14 @@
 
 
 /* header section */
-header {
+/* header {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
-    padding-block: 18px;
-    padding-inline: 25px;
+    padding-block: 1.1rem;
+    padding-inline: 1.4rem;
     position: fixed;
     width: 100%;
     background-color: white;
@@ -60,13 +60,13 @@ nav {
     width: 1.5rem;
 }
 svg {
-    width: 20px;
+    width: 1.1rem;
 }
 .menu-bar {
     position: fixed;
     z-index: 10;
-    right: 15px;
-    width: 3.7rem;
+    right: 1rem;
+    top:3.7rem;
     display: none;
 }
 .close {
@@ -81,7 +81,7 @@ svg {
     display: inline-flex;
     align-items: center;
     list-style: none;
-    gap: 8px;
+    gap: 0.5rem;
     flex-grow: 1.7;
     flex-shrink: 4;
 
@@ -111,21 +111,31 @@ nav a:hover .line{
     gap: 3.5rem;
     list-style: none;
 }
-.social-medias  {
+
+
+
+
+ */
+/* main section */
+main {
+    border: 1px solid rgba(0, 0, 0, 0.092);
+    background-color: rgba(223, 225, 238, 0.492);
+    font-family: popins, 'Courier New', Courier, monospace, Helvetica, sans-serif;
+
     display: flex;
-    gap: 2rem;
-    list-style: none;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
-.social-medias > li:hover .s-links > svg{
-    transform: translateY(-3px);
+.github-svg {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .resume-holder {
     display: flex;
     justify-content: flex-end;
     padding-inline-end: 20%;
     margin-inline-start: 1rem;
-    /* margin-block-start: 0.3rem; */
-    /* border: 1px solid red; */
     height: 50px;
     width: 100%;
     gap: 1.44rem;
@@ -133,7 +143,7 @@ nav a:hover .line{
 }
 .button {
     display: flex;
-    /* border: 1px solid red; */
+    border: 1px solid red; 
     height: 36px;
     text-decoration: none;
     color: rgb(231, 237, 241);
@@ -145,7 +155,7 @@ nav a:hover .line{
     padding: 1rem;
     flex: 6;
     font-size: 0.9rem;
-    /* font-family: popins,'Times New Roman', Times, serif; */
+    font-family: popins,'Times New Roman', Times, serif;
     font-weight: bold;
     background-color: black;
 }
@@ -155,28 +165,10 @@ nav a:hover .line{
     flex: 1;
     padding: 1rem;
     font-weight: bold;
-    /* background-color: rgba(174, 90, 12, 0.734); */
+    background-color: rgba(174, 90, 12, 0.734); 
     background-color: rgba(223, 225, 238, 0.492);
     color: black;
 }
-.github-svg {
-    width: 20px;
-    height: 20px;
-}
-/* main section */
-main {
-    border: 1px solid rgba(0, 0, 0, 0.092);
-    background-color: rgba(223, 225, 238, 0.492);
-    font-family: popins, 'Courier New', Courier, monospace, Helvetica, sans-serif;
-
-    display: flex;
-    width: 100%;
-    min-height: 75vh;
-    box-sizing: border-box;
-   
-    margin-block-start: calc(45px + 1rem);
-}
-
 .round {
     width: 10rem;
     border: 1px solid transparent;
@@ -207,7 +199,7 @@ main {
     height: 100%;
     /* border: 1px solid salmon; */
     padding-block: 5px;
-    padding-inline:  3rem;
+    padding-inline:  0.8rem;
     box-sizing: border-box;
 
     display: flex;
@@ -217,13 +209,45 @@ main {
     flex: 1;
 }
 .image {
-    height: 100%;
-    /* border: 1px solid salmon; */
-
     flex: 1;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    justify-self: center;
+}
+.image-flex {
+    border-radius: 48% 52% 23% 77% / 55% 41% 59% 45% ;
+    width: 160px;
+    height: 160px;
+}
+.nav-wrap {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    /* border: 1px solid red; */
+    padding-top: -100px;
+}
+.social-medias  {
+    padding-left: 1.3rem;
+    padding-top: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    align-items: flex-end;
+    justify-content: center;
+    width: 98%;
+    list-style: none;
+    box-sizing: border-box;
+    /* background-color: aqua; 
+
+    border: 1px solid red; */
+}
+.social-medias > li:hover .s-links > svg{
+    transform: translateX(3px);
 }
 /* section one part */
 #about {
+    min-height: 40vh;
     padding:  3rem;
     box-sizing: border-box;
     background-color: black;
@@ -232,24 +256,26 @@ main {
     justify-content: center;
     gap: 1rem;
     color: white;
-    /* font-size: 1.2rem; */
+    font-size: 1.1rem;
     font-weight: 200;
     width: 100%;   
     flex-wrap: wrap;
     font-family: montseerat;
 }
-/* #about > * {
+#about > * {
     max-width: 115ch;
-} */
+    font-style: italic;
+}
 #about > h3 {
     color: rgb(240, 238, 238);
     font-size: 2.7rem;
     font-weight: 200;
+    font-style:normal;
 }
 
 /* section2 part */
 #works > h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: popins;
     color: rgb(37, 36, 36);
 }
@@ -265,7 +291,7 @@ main {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fill, max(40%, 600px));    
+    /* grid-template-columns: repeat(auto-fill, max(40%, 600px));     */
 }
 .folder-wrapper {
     padding-inline: 1rem;
@@ -414,11 +440,11 @@ form > div {
     flex-direction: column;
 }
 textarea {
-    border: 1px solid rgb(179, 178, 178);
+    border: 1px solid rgb(138, 137, 137);
     border-radius: 0.6rem;
     background-color:  rgb(230, 233, 236);
     padding: 10px;
-    box-shadow: 0 0 8px 1.5px rgb(221, 216, 216);
+    /* box-shadow: 0 0 8px 1.5px rgb(221, 216, 216); */
     box-sizing: border-box;
     font-size: 1rem;
     font-family: popins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace sans-serif;
@@ -426,11 +452,11 @@ textarea {
 .submit {
     background-color: rgb(230, 233, 236);
     padding: 8px 18px;
-    border: 1px solid rgb(194, 186, 186);
+    border: 1px solid rgb(123, 122, 122);
     border-radius: 0.65rem;
     font-family: popins, Georgia, 'Times New Roman', Times, serif;
     font-size: 0.97rem;
-    box-shadow: 0 0 8px 1.5px rgb(221, 216, 216);
+    /* box-shadow: 0 0 8px 1.5px rgb(221, 216, 216); */
     width: 105px;
     height: 45px;
 }
@@ -445,14 +471,14 @@ form {
 form input {
     margin-block-start: 1px;
     height: 2.3rem;
-    border: 1px solid rgb(238, 237, 237);
-    box-shadow: 0 0 3px 1.5px rgb(172, 168, 168);
+    border: 1px solid rgb(125, 123, 123);
+    /* box-shadow: 0 0 3px 1.5px rgb(172, 168, 168); */
     border-radius: 0.5rem;
     font-family: montseerat;
     min-width: 12rem;
     box-sizing: border-box;
     padding: 4px 10px;
-    background-color: rgb(214, 218, 221);
+    background-color: rgb(232, 236, 239);
 }
 .lighter {
     color: rgb(81, 82, 89);
@@ -491,84 +517,17 @@ footer > p {
 
 
 
-@media screen and (max-width: 821px){
-  .show-menu {
-    display: block;
-  }
-  header * {
-    font-size: 2.15rem;
-    font-family: popins;
-  }
-  header {
-    padding-block: 35px;
-    padding-inline: 30px;
-    min-height: calc(1.2rem + 110px);
-  }
-  .h-icon {
-    width: 2.5rem;
-  }
- .first-child {
-    font-size: 3rem;
- }
-  nav {
-    top: 1px;
-    padding: 150px 20px;
-    right: 1px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    position: fixed;
-    z-index: 5;
-    border: 1px solid transparent;
-    border-radius: 0 0px 0px 19px;
-    width: 50%;
-    gap: 40px;
-    height: 100%;
-    background-color: rgb(208, 207, 207); 
-  
-    font-size: 2rem;
-    font-family: popins, dancingscripts;
-    display: none;
-  } 
-  nav > *{
-    animation-name: opacity;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-in-out;
-  }
-  svg {
+@media screen and (max-width: 821px){ 
+svg {
    width: 45px;
    height: 40px;
-  }
-  .links {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .show{
-    display: flex;
-    animation-name: menu;
-    animation-duration: 0.6s;
-    animation-timing-function: ease;
-  }
-
-@keyframes menu {
-    from { width: 0;}
-    to{ width: 50%;}
-}
-@keyframes opacity {
-    from {opacity: 0;}
-    to {opacity: 100%;}
-}
+}  
 main {
     flex-direction: column-reverse;
     color: black;
-    margin-block-start: calc(100px + 2rem);
     padding-block: 150px;
-    /* min-height: max(90vh, 800px); */
     min-height: calc(95vh + 140px);
 }
-  
-
-
  .resume-holder {
     display: flex;
     justify-content: flex-start;
@@ -673,7 +632,7 @@ main {
     width: 100%;
     font-size: 1.5rem;
     padding: 1rem;
-    height: 380px;
+    /* height: 380px; */
 }
 .footer-sec2 > h3{
     font-size: 3.5rem;
@@ -718,7 +677,6 @@ textarea {
 @media (max-width: 392px) {
     main{
         min-height: 110vh;
-        margin-block-start: calc(45px + 3.5rem);
     }
     #works {
         padding: 3rem 1rem;
@@ -727,8 +685,7 @@ textarea {
 @media (max-width: 300px) {
     main{
         min-height: 110vh;
-        margin-block-start: calc(45px + 3.5rem);
-        padding-block: 95px;
+        /* padding-block: 95px; */
     }
     #works {
         padding: 3rem 1rem;
