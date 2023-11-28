@@ -168,7 +168,7 @@ main {
     justify-content: center;
     gap: 1rem;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 200;
     width: 100%;   
     flex-wrap: wrap;
@@ -176,6 +176,7 @@ main {
 }
 #about > * {
     max-width: 115ch;
+    font-style: italic;
 }
 #about > h3 {
     color: rgb(240, 238, 238);
