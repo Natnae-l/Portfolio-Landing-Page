@@ -81,13 +81,6 @@ main {
     background-color: rgba(223, 225, 238, 0.492);
     color: black;
 }
-.round {
-    width: 10rem;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    display: none;
-}
-
 .image {
     box-sizing: border-box;
     display: flex;
@@ -111,13 +104,12 @@ main {
     height: 100%;
     /* border: 1px solid salmon; */
     padding-block: 5px;
-    padding-inline:  0.8rem;
+    padding-inline:  3rem;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     flex: 1;
 }
 .image {
@@ -440,6 +432,13 @@ main {
     padding-block: 150px;
     min-height: calc(95vh + 140px);
 }
+.nav-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
  .resume-holder {
     display: flex;
     justify-content: flex-start;
@@ -490,9 +489,6 @@ main {
     grid-template-columns: repeat(auto-fill, max(100%, 600px));  
     /* grid-template-rows: repeat(auto-fill, 600px);  */
 }
-.image {
-    display: none;
-}
 .round {
     display: block;
     margin-bottom: 1.5rem;
@@ -504,7 +500,6 @@ main {
     max-width: 50ch;
     /* font-size: 1.5rem; */
 }
-/* About me */
 /* skill part */
 .s-h1 {
     font-size: 3.7rem;
@@ -592,6 +587,13 @@ textarea {
     }
     #works {
         padding: 3rem 1rem;
+    }
+    .nav-wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 82%;
+        margin: 0 auto;
     }
 }
 @media (max-width: 300px) {
