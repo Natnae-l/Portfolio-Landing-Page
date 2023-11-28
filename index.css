@@ -674,7 +674,7 @@ textarea {
     box-sizing: border-box;
 }
 }
-@media (max-width: 392px) {
+ @media (max-width: 392px) {
     main{
         min-height: 110vh;
     }
@@ -685,9 +685,16 @@ textarea {
 @media (max-width: 300px) {
     main{
         min-height: 110vh;
-        /* padding-block: 95px; */
+        padding-block: 95px; 
     }
     #works {
         padding: 3rem 1rem;
-    }
+    } 
+}
+
+body {
+    width: 100%;
+}
+main, footer, #works, #skills, #about {
+    width: 100%;
 }
