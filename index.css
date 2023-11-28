@@ -176,7 +176,6 @@ main {
 }
 #about > * {
     max-width: 115ch;
-    font-style: italic;
 }
 #about > h3 {
     color: rgb(240, 238, 238);
