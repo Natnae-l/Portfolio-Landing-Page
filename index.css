@@ -165,84 +165,94 @@ main {
     width: 100%;   
     flex-wrap: wrap;
     font-family: montseerat;
+    line-height: 26px;
 }
 #about > * {
     max-width: 115ch;
 }
 #about > h3 {
-    color: rgb(240, 238, 238);
-    font-size: 2.7rem;
+    color: white;
+    font-size: 2.3rem;
     font-weight: 200;
     font-style:normal;
 }
 
 /* section2 part */
-#works > h2{
-    font-size: 2.5rem;
-    font-family: popins;
-    color: rgb(37, 36, 36);
+#works > h2 {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    font-family: popins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #works {
     background-color: rgba(223, 225, 238, 0.492);
     padding: 3rem 3rem;
     box-sizing: border-box;
-    width: 100%;   
+    width: 100%; 
+    min-height: 100vh;  
 }
-.projects-wrapper {
-    display: grid;
-    margin-block-start: 2.5rem;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    /* grid-template-columns: repeat(auto-fill, max(40%, 600px));     */
-}
-.folder-wrapper {
-    padding-inline: 1rem;
+.project-wrapper {
     display: flex;
-    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 20vh;
+    margin-bottom: 3rem;
 }
-.folder-wrapper > ul {
-    display: flex;
-    gap: 1.2rem;
-}
-.js {
-    width: 40px; 
-    border: 1px solid transparent;
-    border-radius: 10px;
-}
-.project * {
-    list-style: none;
-    font-family: lato, 'Times New Roman', Times, serif;
+.project-name {
+    font-size: 1.4rem;
 }
 .project {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: flex-end;
-    width: max(40%, 600px);
-    background-image: url(images/shifaaz-shamoon-9K9ipjhDdks-unsplash.jpg);
-    border-radius: 0.4rem;
-    overflow: hidden;
-    box-shadow: 0px 0px 0px 2px rgb(147, 145, 145);
-}
-.materials {
-    box-sizing: border-box;
-    padding: 0.6rem 0.8rem; 
-    width: 20rem;
-    height: 350px;
+    /* border: 1px solid red; */
+    min-height: 20vh;
+    flex: 1;    
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    gap: 0.8rem;
-    flex: 1;
-    background-color: rgba(193, 195, 208, 0.492);
+    gap: 2rem;
+    padding: 1rem;
 }
-.materials > ul {
+.project * {
+    font-family: popins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.project-img {
+    /* border: 1px solid red; */
+    min-height: 20vh;
+    flex: 1;   
+}
+.built-with li {
+    background-color: black;
+    list-style: none;
+    color: white;
+    width: fit-content;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+}
+.built-with ul {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.2rem;
 }
-.w-img {
+.live {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    padding: 0.7rem 2rem;
+    border: 2px solid black;
+    box-shadow:inset -5px -5px 1px 1px rgb(236, 232, 232);
+}
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.link-github {
+    width: 22px;
+    height: 22px;
+}
+.link-github img {
     max-width: 100%;
-    height: 500px;
+}
+.pro-img {
+    max-width: 100%;
 }
 /* skill */
 
@@ -407,13 +417,12 @@ footer > p {
     color: rgb(188, 187, 185);
 }
 
+
+
+
+
+
 /* media */
-
-
-
-
-
-
 
 
 
@@ -475,31 +484,54 @@ main {
 #works {
     padding: 3rem 1rem;
 }
+#works > h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+.project-wrapper {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-bottom: 6rem;
+}
+
+#works * {
+    font-size: 2rem;
+}
+#works .project-name{
+    font-size: 3rem;
+}
+.built-with ul {
+    gap: .8rem;
+}
+.link-github {
+    width: 45px;
+    height: 45px;
+}
+.live {
+    width: 180px;
+    box-shadow:inset -9px -9px 1px 1px rgb(236, 232, 232);
+}
 #about {
     font-size: 1.6rem;
     color: rgb(197, 196, 196);
     font-weight: lighter;
     font-family: popins;
     padding: 3rem 1.7rem;
+    line-height: normal;
 }
 #about > h3{
     font-size: 4rem;
     font-family: montseerat;
     font-weight: 300;
 }
-.projects-wrapper {
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, max(100%, 600px));  
-    /* grid-template-rows: repeat(auto-fill, 600px);  */
-}
+
 
 .des-me {
     font-family: popins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
     letter-spacing: 0.1rem ;
     max-width: 50ch;
-    /* font-size: 1.5rem; */
-}
+} 
 /* skill part */
 .s-h1 {
     font-size: 3.7rem;
@@ -533,13 +565,6 @@ main {
 }
 .lighter {
     font-size: 2.5rem;
-}
-.project {
-    flex-direction: column;
-    width: 100%;
-    font-size: 1.5rem;
-    padding: 1rem;
-    /* height: 380px; */
 }
 .footer-sec2 > h3{
     font-size: 3.5rem;
