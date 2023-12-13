@@ -365,7 +365,10 @@ main {
 }
 .project-img {
     /* border: 1px solid red; */
-    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
     flex: 1;   
 }
 .built-with li {
