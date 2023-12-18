@@ -408,6 +408,8 @@ main {
 }
 .pro-img {
     max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 10px 19px 34px 10px rgba(0,0,0,0.1);
 }
 /* skill */
 
