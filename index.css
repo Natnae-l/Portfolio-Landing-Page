@@ -510,8 +510,8 @@ form > div {
     flex-direction: column;
 }
 textarea {
-    border: 1px solid rgb(138, 137, 137);
-    border-radius: 0.6rem;
+    border: 1.5px solid rgb(174, 174, 174);
+    border-radius: 0.5rem;
     background-color:  rgb(230, 233, 236);
     padding: 10px;
     /* box-shadow: 0 0 8px 1.5px rgb(221, 216, 216); */
@@ -522,11 +522,11 @@ textarea {
 .submit {
     background-color: rgb(230, 233, 236);
     padding: 8px 18px;
-    border: 1px solid rgb(123, 122, 122);
-    border-radius: 0.65rem;
+    border: 1.5px solid rgb(203, 202, 202);
+    border-radius: 0.55rem;
     font-family: popins, Georgia, 'Times New Roman', Times, serif;
     font-size: 0.97rem;
-    /* box-shadow: 0 0 8px 1.5px rgb(221, 216, 216); */
+    box-shadow: 1px 0 8px 1.5px rgb(199, 198, 198);
     width: 105px;
     height: 45px;
 }
@@ -541,9 +541,8 @@ form {
 form input {
     margin-block-start: 1px;
     height: 2.3rem;
-    border: 1px solid rgb(125, 123, 123);
-    /* box-shadow: 0 0 3px 1.5px rgb(172, 168, 168); */
-    border-radius: 0.5rem;
+    border: 1.5px solid rgb(174, 174, 174);
+    border-radius: 0.4rem;
     font-family: montseerat;
     min-width: 12rem;
     box-sizing: border-box;
@@ -802,4 +801,32 @@ body {
 }
 main, footer, #works, #skills, #about {
     width: 100%;
+}
+
+
+body::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	/* background-color: rgba(223, 225, 238, 0.492); */
+    border-radius: 1rem;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar
+{
+	width: 15px;
+    background-color: rgba(223, 225, 238, 0.492);
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #aba9a4;
+	border: 1px solid #b3b1b1;
+    border-radius: .5rem;
+}
+
+@media (min-width: 768px) {
+  .button-59 {
+    min-width: 170px;
+  }
 }
