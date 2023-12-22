@@ -7,8 +7,10 @@
     <link rel="shortcut icon" href="Icons/letter-n.png" type="image/x-icon">
     <title>Natnael Teklemariam</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
+    
 </head>
 <body id="body">
     <main>
@@ -45,7 +47,7 @@
     </section>
     <section id="works">
         <h2>Projects</h2>
-        <section class="project-wrapper">
+        <section class="project-wrapper" data-aos="fade-right" data-aos-duration="1000">
             <section class="project">
                 <h3 class="project-name">InsightFulVerse</h3>
                 <section class="built-with">
@@ -72,7 +74,7 @@
                 <img src="images/Capture.PNG" alt="" class="pro-img">
             </section>            
         </section>
-        <section class="project-wrapper">
+        <section class="project-wrapper" data-aos="fade-left" data-aos-duration="1000">
             <section class="project">
                 <h3 class="project-name">Happy Notes</h3>
                 <section class="built-with">
@@ -92,7 +94,7 @@
                 </section>
                 
                 <p class="project-description">
-                    Happy Notes (Fullstack Web App) – Users can login using their google account to their profile and find their list of notes. They can add new notes through an input, which they can then edit or delete all notes in their profile.
+                    Happy Notes (Fullstack Web App) - Users can login using their google account to their profile and find their list of notes. They can add new notes through an input, which they can then edit or delete all notes in their profile.
                 </p>
             </section>
             <section class="project-img">
@@ -189,5 +191,9 @@
         <hr>    
      <p>@2023</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -16,14 +16,14 @@
 //     document.querySelector(".close").classList.toggle("show-menu")
 //     document.querySelector(".menu-bar").classList.toggle("show-menu")
 // }
-$(function(){
-	$('.box-menu .wrapper').on('click', function(){
-		$('.box-menu').toggleClass('full-menu');
-		$('.hamburger').toggleClass('active');
-        document.querySelector('header').style.minHeight = '100vh'
-	});
-	$('a').on('click', function(){
-		$(this).siblings('a').removeClass('active');
-		$(this).addClass('active');
-	});
-});
+// $(function(){
+// 	$('.box-menu .wrapper').on('click', function(){
+// 		$('.box-menu').toggleClass('full-menu');
+// 		$('.hamburger').toggleClass('active');
+//         document.querySelector('header').style.minHeight = '100vh'
+// 	});
+// 	$('a').on('click', function(){
+// 		$(this).siblings('a').removeClass('active');
+// 		$(this).addClass('active');
+// 	});
+// });
