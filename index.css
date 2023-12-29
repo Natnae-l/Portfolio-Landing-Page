@@ -814,7 +814,7 @@ body::-webkit-scrollbar-track
 
 body::-webkit-scrollbar
 {
-	width: 15px;
+	width: 10px;
     background-color: rgba(223, 225, 238, 0.492);
 }
 
